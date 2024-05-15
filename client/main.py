@@ -7,9 +7,9 @@ def main():
     config = read_config('../config.json')
     host = config['host']
     port = config['port']
-    username = config['username']
-    password = config['password']
-
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
+    testConnectionToFTPServer(host, port, username, password)
 
     while True:
         
